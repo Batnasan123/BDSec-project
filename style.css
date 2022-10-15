@@ -1,0 +1,23 @@
+img{
+    width:90%;
+    height:100%;
+}
+.button-1{
+    border-radius: 0px;
+
+}
+.button-2{
+    border-radius: 0px;
+}
+.button-3{
+    border-radius: 0px;
+}
+.head-button{
+    width:80%;
+    border-radius: 0px;
+    background-color: #1A1852;
+    font: white;
+}
+a{
+    color:white;
+}

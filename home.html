@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="header">
@@ -49,9 +50,9 @@
     <div class="container py-4">
   
       <div class="row align-items-md-stretch">
-        <div class="col-md-6">
+        <div class="col-md-6" >
             <div class="h-100 p-5 bg-light border rounded-3">
-              <img src="images/khan_bank_uzuulelt.jpg" style="width: 100%; height: auto;">
+              <img src="images/khan_bank_uzuulelt.jpg" style="width: 100%; height: auto;" alt="" data-aos="fade-right" data-aos-easing="ease-out-back">
             </div>
           </div>
     <!-- Үнэт цаасны тухай -->
@@ -117,19 +118,18 @@
     </div>
 
   <!-- Захиалга өгөх заавар -->
-<div class="title" id="zahialga_ogoh_zaavar">
-<h2 style="text-align: center;" class="title1">
-    ЗААВАР
-</h2>
-<h3 style="text-align: center;">
-    ХУВЬЦААНЫ ЗАХИАЛГА ӨГӨХ
-</h3>
-</div>
 <div class="container" style="padding-bottom: 30px;">
+  <div class="title" id="zahialga_ogoh_zaavar">
+    <h2 style="text-align: center;" class="title1">
+        ЗААВАР
+    </h2>
+    <h3 style="text-align: center;">
+        ХУВЬЦААНЫ ЗАХИАЛГА ӨГӨХ
+    </h3>
+    </div>
   <div class="row align-items-md-stretch">
-    
     <div class="col-md-6">
-      <div class="h-100 p-5 border rounded-3" style="background-color: #8ab5d2;">
+      <div class="h-100 p-5 border rounded-3" style="background-color: #1A1852;">
         <div class="d-grid gap-2 mx-auto">
             <div class="col" style="color: white;">ТАНИЛЦУУЛГА</div>
             <div class="col"> <button class="btn btn-primary" type="button" style="width: 50%;"><a href="#" target="blank">Татах</a></button> </div>
@@ -144,7 +144,7 @@
     </div>
 
     <div class="col-md-6">
-      <div class="h-100 p-5 border rounded-3" style="background-color: #8ab5d2;">
+      <div class="h-100 p-5 border rounded-3" style="background-color: #1A1852;">
         <div class="d-grid gap-2">
           <button class="btn btn-primary" type="button" style="width: 30%;"><a href="#" target="blank">ЗАХИАЛГА ӨГӨХ</a></button>
           <div class="container">
@@ -165,19 +165,19 @@
 </main>
 
   <!-- Togsgoliin heseg -->
-<div class="footer">
-    <div class="container">
-<div id="contact" class="contact_section bg-primary center border rounded-3">
-                <div class="container text-center">	
-                <div class="contact-taital">
+<div class="footer" style="background-color: #1A1852;">
+<div id="contact" class="contact_section center border rounded-3">
+  <div class="container">
+              <div class="container">	
+                <div class="contact-taital text-center">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h1 class="contact_text12"><strong>ТУХАЙ</strong></h1>
+                            <h1 class="title1" style="color: white;"><strong>ТУХАЙ</strong></h1>
                         </div>
                     </div>
                 </div>
                     <div class="row">	
-                        <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="col-4 text-align">
                             <h2 class="adderess_text">Хаяг</h2>
                             <div class="image-icon "><img src="images/map-icon.png"> <span class="email_text">Zaluuchuud Avenue 27/1,8th Khoroo, Sukhbaatar District, Ulaanbaatar </span></div>
                             <div class="image-icon "><img src="images/phone-icon.png"><span class="email_text">(+976) 75551919</span></div>
@@ -186,8 +186,8 @@
                     
                         <div class="col-sm-6 col-md-6 col-lg-3">
                             <h2 class="adderess_text">СОШИАЛ ХАЯГ</h2>
-                            <div class="social_icon">
-                                <ul>
+                            <div id="div_top_hypers">
+                                <ul id="menu-header-menu" class="menu" style="list-style-type:none; margin-bottom: 3px; padding-bottom: 1em;">
                                     <li><a href="https://www.facebook.com/BDSecJSC/" target="blank"><img src="images/fb-icon.png">  </a></li>
                                     <li><a href="https://twitter.com/BDSecJSC" target="blank"><img src="images/twitter-icon.png"></a></li>
                                     <li><a href="https://plus.google.com/109453939726026967998" target="blank"><img src="images/google-icon.png"></a></li>
@@ -214,5 +214,11 @@
     <div class="container" style="padding-top: 20px;">
     </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+  offset, 400
+  duration: 3000
+</script>
 </body>
 </html>

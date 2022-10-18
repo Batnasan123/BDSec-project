@@ -1,17 +1,27 @@
 .button-1{
     border-radius: 0px;
+    font-size: 13px;
 }
 .button-2{
     border-radius: 0px;
+    font-size: 13px;
+
 }
 .button-3{
     border-radius: 0px;
+    font-size: 13px;
+}
+.first_button{
+    width:240px;
 }
 .head-button{
     width:80%;
     border-radius: 0px;
     background-color: #1A1852;
     font: white;
+}
+.head-row{
+    height:50px;
 }
 a{
     color:white;
@@ -41,4 +51,212 @@ span{
 }
 h2{
     color: white;
+}
+.head_container{
+    width:150%;
+}
+.header{
+    border-radius: 10px;
+    background-color: lightblue;
+    box-shadow: lightgrey;
+    width:80%;
+    /*position:relative;
+    left: 50px;
+    */height:50%;
+    margin : auto;
+    
+}
+ 
+@media screen and(max-width:576){
+    .center-desk{
+        width:50%;
+    }
+    #main{
+        visibility: visible;
+        position: relative;
+        left: 80%;
+        bottom: 50px;
+        height: 30px;
+    }
+    .openbtn{
+        width:50px;
+    }
+}
+@media handheld and(min-width:576px),
+screen and (max-device-width:781px),
+screen and (max-width:781px){
+    .head-button{
+        width: 100%;
+        height:20%;
+
+    }
+    .first_button{
+        padding-top:0px;
+    }
+    .head-wrapper{
+        visibility: hidden;
+    }
+    #main{
+        visibility: visible;
+        position: relative;
+        left: 80%;
+        bottom: 50px;
+        height: 20px;
+    }
+    .openbtn{
+        width:50px;
+    }
+    .center-desk{
+        width:100%;
+    }
+     
+
+}
+@media only screen and (min-width: 992px){
+
+    .headers{
+        padding-top: 10px;
+      }
+      .center-desk{
+        padding-top: 10px;
+    }
+    .second_button{
+        position:relative;
+        right: -15px;
+    }
+    #main{
+        visibility: hidden;
+    }
+     
+        
+}
+@media only screen and (min-width: 781px) and (max-width:991px){
+    .head-button{
+        width: 135px;
+        
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+    .head-row{
+        margin:0;
+    }
+    .center-desk{
+        padding-inline: 5px;
+        padding-top: 10px;
+        width:100%;
+    }
+    .logo_section{
+        padding:0;
+        width:150px;
+    }
+    .headers{
+        padding-top: 10px;
+      }
+      .first_button{
+        padding-top:2px;
+    }
+    #main{
+        visibility: hidden;
+    }
+     
+
+}
+.starter{
+    background-color: #1A1852;
+}
+#about .about-img {
+    height: 615px;
+    overflow: hidden;
+}
+
+[data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+    transition-timing-function: ease;
+}
+[data-aos][data-aos][data-aos-duration='400'], body[data-aos-duration='400'] [data-aos] {
+    transition-duration: .4s;
+}
+[data-aos^=fade][data-aos^=fade] {
+    opacity: 0;
+    transition-property: opacity,transform;
+}
+[data-aos=fade-right] {
+    transform: translate(-100px);
+}
+[data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:lightblue;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:aliceblue;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:lightblue;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    height: 40px
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 0px;
+    width: 0px;
+    height: 0px;
+
+  }
+
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  #diagram{
+   width:200%;
+   height:800px;
+   border: 3px black;
+
+} 
+#IPO{
+    position:relative;
+    right:-10%;
+    width:100%;
 }

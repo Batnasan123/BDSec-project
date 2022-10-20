@@ -248,7 +248,7 @@ const data5 = {
 		barThickness: 50,
         maxBarThickness: 50,
 		backgroundColor: [
-	      'rgb(0, 68, 135)',
+	      'rgb(0, 65, 130)',
 	      'rgb(0, 68, 135)',
 	      'rgb(0, 120, 239)'
 	    ],

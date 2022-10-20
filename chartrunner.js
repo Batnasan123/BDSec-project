@@ -27,8 +27,8 @@ const labels = [
 const data = {
 	labels: labels,
 	datasets: [{
-		barThickness: 40,
-        maxBarThickness: 30,
+		barThickness: 50,
+        maxBarThickness: 50,
 		backgroundColor: [
 	      'rgb(0, 76, 152)',
 	      'rgb(0, 76, 152)',
@@ -84,8 +84,8 @@ const data2 = {
 	labels: labels2,
 	datasets: [{
 		label: 'НИЙТ ӨӨРИЙН ХӨРӨНГӨ ',
-		barThickness: 60,
-        maxBarThickness: 60,
+		barThickness: 50,
+        maxBarThickness: 50,
 		backgroundColor: [
 	      'rgb(0, 76, 152)',
 	      'rgb(0, 76, 152)',
@@ -138,8 +138,8 @@ const data3 = {
 	labels: labels2,
 	datasets: [{
 		label: 'НИЙТ ЦЭВЭР АШИГ',
-		barThickness: 60,
-        maxBarThickness: 60,
+		barThickness: 50,
+        maxBarThickness: 50,
 		backgroundColor: [
 	      'rgb(0, 68, 135)',
 	      'rgb(0, 68, 135)',
@@ -192,8 +192,8 @@ const data4 = {
 	labels: labels4,
 	datasets: [{
 		label: 'НИЙТ ХАРИЛЦАХ ХАДГАЛАМЖ',				
-		barThickness: 60,
-        maxBarThickness: 60,
+		barThickness: 50,
+        maxBarThickness: 50,
 		backgroundColor: [
 	      'rgb(0, 68, 135)',
 	      'rgb(0, 68, 135)',
@@ -245,8 +245,8 @@ const data5 = {
 	labels: labels5,
 	datasets: [{
 		label: 'НИЙТ ЗЭЭЛ',
-		barThickness: 60,
-        maxBarThickness: 60,
+		barThickness: 50,
+        maxBarThickness: 50,
 		backgroundColor: [
 	      'rgb(0, 68, 135)',
 	      'rgb(0, 68, 135)',
@@ -299,8 +299,8 @@ const data6 = {
 	labels: labels6,
 	datasets: [{
 		label: 'НИЙТ ХҮҮГИЙН ОРЛОГО',				
-		barThickness: 60,
-        maxBarThickness: 60,
+		barThickness: 50,
+        maxBarThickness: 50,
 		backgroundColor: [
 	      'rgb(0, 68, 135)',
 	      'rgb(0, 68, 135)',

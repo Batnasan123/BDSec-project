@@ -74,7 +74,7 @@
       visibility: visible;
       position: relative;
       left: 80%;
-      bottom: 50px;
+      bottom: 100px;
       height: 30px;
     }
     .openbtn {
@@ -98,7 +98,7 @@
       visibility: visible;
       position: relative;
       left: 80%;
-      bottom: 50px;
+      bottom: 100px;
       height: 20px;
     }
     .openbtn {
@@ -217,15 +217,17 @@
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: lightblue;
-    color: white;
+    font-weight: bold;
+    background-color: white;
+    color: lightblue;
     padding: 10px 10px;
     border: none;
     height: 40px;
   }
   
   .openbtn:hover {
-    background-color: #444;
+    background-color: lightblue;
+    color:white;
   }
   
   #main {
@@ -383,4 +385,7 @@
   @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
+  }
+  body{
+    background-color:none ;
   }

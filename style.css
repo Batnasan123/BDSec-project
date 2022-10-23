@@ -61,7 +61,6 @@ h2 {
 }
 .header {
   border-radius: 10px;
-  background-color: lightblue;
   box-shadow: lightgrey;
   width: 80%;
   /*position:relative;
@@ -284,6 +283,7 @@ body[data-aos-duration="400"] [data-aos] {
 }
 #faq #faq-list p {
   margin-bottom: 20px;
+  color: black;
 }
 p {
   padding: 0;
@@ -460,4 +460,29 @@ body {
     rgba(42, 27, 161, 0.7),
     rgba(29, 210, 177, 0.7) 100%
   );
+}
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #e6e9f0;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to bottom,
+    rgba(230, 233, 240, 0.6),
+    rgba(25, 200, 28, 0.6)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to bottom,
+    rgba(230, 233, 240, 0.6),
+    rgba(35, 237, 48, 0.6)
+  );
+}
+.list-group li {
+  margin-right: 20px;
+}
+.list-group li a img {
+  width: 50px;
+  height: 50px;
 }

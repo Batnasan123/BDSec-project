@@ -21,12 +21,11 @@
 <body class="body1">
   <div class="mask gradient-custom">
 <!-- Цэсний хэсэг -->
-<div class="header position-sticky shadow p-1 rounded-3 mb-5" style="padding-top: 10px;">
-  <div class="container position-sticky" style="max-height: 50%; padding-bottom:10px; position: fixed;bottom: 0;width: 100%;">
-      <div class="row head-row" style="max-width: 100%;">
-          <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col logo_section " style="height: 100%;">
+  <div class=" header  shadow p-1 rounded-3 mb-5">
+      <div class="row head-row " style="max-width: 100%;">
+          <div class=" col-xl-2 col-lg-2 col-md-3 col-sm-6 col logo_section " style="height: 100%;">
                 <div class="center-desk" style="height: 100%;">
-                   <div class="logo"><a href="#home"><img src="images/logo_en.png" style="width: 100%;"></a> 
+                   <div class="logo" style=" top:-20%;"><a href="#home"><img id="BDS-icon"src="images/logo_en.png" style="width: 100%;"></a> 
                    </div> 
                 </div>
           </div>
@@ -48,18 +47,25 @@
            </div>
       </div>
    </div>
-  </div>
   <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     <a href="#zahialga_ogoh_zaavar">ЗАХИАЛГА ӨГӨХ ЗААВАР</a>
     <a href="https://dbx.bdsec.mn/" target="blank">ЗАХИАЛГА ӨГӨХ</a>
-    <a href="https://dbx.bdsec.mn/" target="blank">ДАНС НЭЭХ</a>
+    <a href="https://dbx.bdsec.mn/mn/create/acc" target="blank">ДАНС НЭЭХ</a>
   </div>
   
   <div id="main">
     <button class="openbtn" onclick="openNav()">☰</button>             
-  </div>   
-<div class="row" id="IPO"><img class="shadow p-3 border rounded" src="Images/1.png" style="height:100% ; width: 100%"></div>
+  </div> 
+  <div class="row face"><div class="face-pic"><img id="Face-back" src="Images/Khanbank.png" height="1000px" width="1000px"></div>
+  </div>
+  <div class="row face-properties" max-width="700px" max-height="700px">
+    <div class="col mini-logo-div"><img id="mini-logo" src="Images/mini-logo.jpg"></div>
+    <div class="col mini"><p id="mini" >ХААН БАНК</p></div>
+    <h1 class="mini-text text-1">ХААН БАНКНЫ IPO</h1>
+    <h1 class="mini-text text-2">ХАМТЫН ӨСӨЛТ</h1>
+    <h1 class="mini-text text-3">ТӨГӨЛДӨР</h1>
+  </div>  
 <div class="line-1"></div>
 <main style="padding-top: 20px;">
 <!-- Хаан банкны тухай -->
@@ -215,13 +221,14 @@
     <div class="col-sm-2" style="height: 4px; background: red; width: 10%;"></div>
   </div>
   <div class="row">
-    <div class="col"> 
-      <h4  class=" aos-init " data-aos="fade-right" style="text-align: center;">IPO зарлахаас өмнө</h4>
-      <canvas  data-aos="fade-right" id="pieChart1" class="w-100 h-100 aos-init " style="width:100% ;height:100%"></canvas>
+    <div class="col-lg-6"> 
+      <div class="row"><h4  class=" aos-init " data-aos="fade-right" style="text-align: center;">IPO зарлахаас өмнө</h4></div>
+      <div class="row "><canvas  data-aos="fade-right" id="pieChart1" class=" aos-init w-200 h-200 piecharts" ></canvas></div>
       </div>
-      <div class=" col"> 
-        <h4   class=" aos-init " data-aos="fade-left" style="text-align: center;"> IPO зарласаны дараа </h4>
-        <canvas    data-aos="fade-left" id="pieChart2" class=" aos-init w-100 h-100" style="width:100% ;height:100%"></canvas>
+      <div class=" col-lg-6"> 
+        <div class="row">
+        <h4   class=" aos-init " data-aos="fade-left" style="text-align: center;"> IPO зарласаны дараа </h4></div>
+        <div class="row"><canvas    data-aos="fade-left" id="pieChart2" class=" aos-init w-200 h-200 piecharts"></canvas></div>
         </div>
   </div>
 </div>
@@ -246,13 +253,13 @@
 <div class="col-md-6">
 <div class="h-100 p-5 shadow-lg border rounded-3">
   <div class="d-grid gap-2 mx-auto">
-      <div class="col aos-init" style="color: white;"  data-aos="fade-right">ТАНИЛЦУУЛГА</div>
+      <div class="col aos-init" style="color: black;"  data-aos="fade-right">ТАНИЛЦУУЛГА</div>
       <div class="col aos-init"  data-aos="fade-right"><a href="#" target="blank"> <button class="btn btn-primary" class=" aos-init " data-aos="fade-right" type="button" style="width: 50%;">Татах</button></a> </div>
-      <div class="col aos-init" data-aos="fade-right" style="color: white;">ETT PROSPECTUS</div>
+      <div class="col aos-init" data-aos="fade-right" style="color: black;">ETT PROSPECTUS</div>
       <div class="col aos-init"  data-aos="fade-right"><a href="#" target="blank"><button class="btn btn-primary" type="button" style="width: 50%;">Татах</button></a> </div>
-      <div class="col aos-init"  data-aos="fade-right" style="color: white;">АРИЛЖААНД ОРОЛЦОХ ЗӨВЛӨМЖ</div>
+      <div class="col aos-init"  data-aos="fade-right" style="color: black;">АРИЛЖААНД ОРОЛЦОХ ЗӨВЛӨМЖ</div>
       <div class="col aos-init"  data-aos="fade-right"><a href="#" target="blank"><button class="btn btn-primary" type="button" style="width: 50%;">Татах</button></a> </div>
-      <div class="col aos-init"  data-aos="fade-right" style="color: white;">ЗАХИАЛГА ӨГӨХ ЗААВАР</div>
+      <div class="col aos-init"  data-aos="fade-right" style="color: black;">ЗАХИАЛГА ӨГӨХ ЗААВАР</div>
       <div class="col aos-init"  data-aos="fade-right"><a href="#" target="blank"><button class="btn btn-primary" type="button" style="width: 50%;">Татах</button> </a></div>
     </div>
 </div>
@@ -264,14 +271,14 @@
     <button class="btn btn-primary aos-init" data-aos="fade-left" type="button" style="width: auto;"><a href="#" target="blank">ЗАХИАЛГА ӨГӨХ</a></button>
     <div class="container">
       <div class="row row-cols-2">
-        <div class="col aos-init" data-aos="fade-left" style="color: white;">АНДРОЙД АПП ТАТАХ</div>
-        <div class="col aos-init" data-aos="fade-left" style="color: white;">АПП STORE-С ТАТАХ</div>
+        <div class="col aos-init" data-aos="fade-left" style="color: black;">АНДРОЙД АПП ТАТАХ</div>
+        <div class="col aos-init" data-aos="fade-left" style="color: black;">АПП STORE-С ТАТАХ</div>
         <div class="col aos-init" data-aos="fade-left"><a href="https://play.google.com/store/apps/details?id=mn.ds.dbx.bdsec" target="blank"><img src="images/google-play.png" style="width: 100%; height: 100px;"></a></div>
         <div class="col aos-init" data-aos="fade-left"><a href="https://apps.apple.com/us/app/bdsec-jsc/id1538110996" target="blank"><img src="images/appstore.jpg" style="width: 100%; height: 80px; padding-top: 20px;"></a></div>
       </div>
       <div class="row row-cols-2">
-        <div class="col aos-init" data-aos="fade-left" style="color: white;">Данс нээх QR</div>
-        <div class="col aos-init" data-aos="fade-left" style="color: white;">Захиалга өгөх-QR</div>
+        <div class="col aos-init" data-aos="fade-left" style="color: black;">Данс нээх QR</div>
+        <div class="col aos-init" data-aos="fade-left" style="color: black;">Захиалга өгөх-QR</div>
         <div class="col aos-init" data-aos="fade-left"><a href="https://dbx.bdsec.mn/mn/create/acc" target="blank">
           <img src="images/QR_dans-neeh.png" style="width: 100%; height: 100%;"></a></div>
         <div class="col aos-init" data-aos="fade-left"><a href="https://dbx.bdsec.mn/" target="blank">
@@ -457,8 +464,8 @@ offset, 400;
 duration: 3000;
 }
 function openNav() {
-document.getElementById("mySidebar").style.width = "250px";
-document.getElementById("main").style.marginLeft = "250px";
+document.getElementById("mySidebar").style.width = "200px";
+document.getElementById("main").style.marginLeft = "200px";
 
 }
 
@@ -467,46 +474,6 @@ document.getElementById("mySidebar").style.width = "0";
 document.getElementById("main").style.marginLeft= "0";
 }
 </script>
-<!-- Your custom scripts (optional) -->
-<script type="text/javascript">//bar
-var ctxB = document.getElementById("barChart").getContext('2d');
-var myBarChart = new Chart(ctxB, {
-type: 'bar',
-data: {
- labels: ["2019", "2020", "2021","","","","",""],
- datasets: [{
-   label: '# of Votes',
-   data: [10194,12111,13463],
-   backgroundColor: [
-     'rgba(255, 99, 132, 0.2)',
-     'rgba(54, 162, 235, 0.2)',
-     'rgba(255, 206, 86, 0.2)',
-     //'rgba(153, 102, 255, 0.2)',
-     //'rgba(255, 159, 64, 0.2)'
-   ],
-   borderColor: [
-     'rgba(255,99,132,1)',
-     'rgba(54, 162, 235, 1)',
-     'rgba(255, 206, 86, 1)',
-     //'rgba(153, 102, 255, 1)',
-     //'rgba(255, 159, 64, 1)'
-   ],
-   borderWidth: 3,
-   innerWidth : 20,
-   outerWidth:20,
-   
- }]
-},
-options: {
- scales: {
-   yAxes: [{
-     ticks: {
-       beginAtZero: true
-     }
-   }]
- }
-}
-});</script>
 <script type="text/javascript">//pie
 var ctxB = document.getElementById("pieChart1").getContext('2d');
 var myBarChart = new Chart(ctxB, {
@@ -517,18 +484,18 @@ data: {
     label: '# of Votes',
     data: [45.55,25.31,14.69, 9.75,4.70],
     backgroundColor: [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255, 206, 86, 0.2)',
-      'rgba(153, 102, 255, 0.2)',
-      'rgba(255, 159, 64, 0.2)'
+    'rgba(15, 31, 113, 1)',
+      'rgba(41, 69, 206, 1)',
+      'rgba(123, 144, 252, 1)',
+      'rgba(190, 200, 247, 1)',
+      'rgba(211, 211, 215, 1)',
     ],
     borderColor: [
-      'rgba(255,99,132,1)',
-      'rgba(54, 162, 235, 1)',
-      'rgba(255, 206, 86, 1)',
-      'rgba(153, 102, 255, 1)',
-      'rgba(255, 159, 64, 1)'
+    'rgba(15, 31, 113, 1)',
+      'rgba(41, 69, 206, 1)',
+      'rgba(123, 144, 252, 1)',
+      'rgba(190, 200, 247, 1)',
+      'rgba(211, 211, 215, 1)',
     ],
     borderWidth: 3,
     innerWidth : 20,
@@ -556,20 +523,20 @@ data: {
     label: '# of Votes',
     data: [45.55,25.31,14.69, 9.75,4.70,10.00],
     backgroundColor: [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255, 206, 86, 0.2)',
-      'rgba(153, 102, 255, 0.2)',
-      'rgba(255, 159, 64, 0.2)',
-      'rgba(255, 140, 61, 0.2)'
+      'rgba(15, 31, 113, 1)',
+      'rgba(41, 69, 206, 1)',
+      'rgba(123, 144, 252, 1)',
+      'rgba(190, 200, 247, 1)',
+      'rgba(211, 211, 215, 1)',
+      'rgba(239, 242, 159, 1)'
     ],
     borderColor: [
-      'rgba(255,99,132,1)',
-      'rgba(54, 162, 235, 1)',
-      'rgba(255, 206, 86, 1)',
-      'rgba(153, 102, 255, 1)',
-      'rgba(255, 159, 64, 1)',
-      'rgba(255, 140, 61, 0.2)'
+      'rgba(15, 31, 113, 1)',
+      'rgba(41, 69, 206, 1)',
+      'rgba(123, 144, 252, 1)',
+      'rgba(190, 200, 247, 1)',
+      'rgba(211, 211, 215, 1)',
+      'rgba(239, 242, 159, 1)'
     ],
     borderWidth: 3,
     innerWidth : 20,

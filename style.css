@@ -2,6 +2,7 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
+
 }
 .button-1 {
   border-radius: 0px;
@@ -14,19 +15,15 @@ body {
 .button-3 {
   border-radius: 0px;
   font-size: 13px;
-  height: 100%;
 }
 .first_button {
-  width: 100%;
+  width: 240px;
 }
 .head-button {
-  width: 100%;
+  width: 80%;
   border-radius: 0px;
   background-color: #1a1852;
   font: white;
-  font-size: 14px;
-  padding: 5px;
-  height: 100%;
 }
 .head-row {
   height: 50px;
@@ -71,24 +68,11 @@ h2 {
       */
   height: 50%;
   margin: auto;
-  left: 10%;
-  z-index: 1;
-  position: fixed;
-  height: 10%;
-  max-width: 80%;
-  background-color: lightgray;
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(210, 255, 250, 0.1),
-    rgba(180, 255, 250, 1)
-  );
+  left:10% ;z-index: 1; position:fixed;height: 10%; max-width: 80%; 
+  background-color: lightgray; 
+  background-image: linear-gradient(to bottom right, rgba(210, 255, 250, 0.1), rgba(180, 255, 250, 1));
 }
-.center-desk {
-  height: 50px;
-}
-.header .head-row .head-wrapper {
-  padding: none;
-}
+
 @media screen and(max-width:576) {
   .center-desk {
     width: 50%;
@@ -96,7 +80,7 @@ h2 {
   #main {
     visibility: visible;
     position: fixed;
-    left: 70%;
+    left: 80%;
     height: 30px;
   }
   .openbtn {
@@ -120,26 +104,27 @@ h2 {
     z-index: 1;
     visibility: visible;
     position: fixed;
-    left: 75%;
+    left: 80%;
     height: 20px;
   }
   .openbtn {
     width: 50px;
   }
-  .logo_section {
-    width: 70%;
-    height: 20%;
-    bottom: 10%;
+  .center-desk {
+    width: 100%;
+  }
+  #BDS-icon{
+    max-width: 60%;
+    max-height: 30%;
   }
 }
 @media only screen and (min-width: 992px) {
   .headers {
     padding-top: 10px;
-    width: 100%;
   }
   .second_button {
     position: relative;
-    width: 100%;
+    right: -15px;
   }
   #main {
     visibility: hidden;
@@ -148,18 +133,28 @@ h2 {
 @media only screen and (min-width: 781px) and (max-width: 991px) {
   .head-button {
     width: 135px;
+
     padding-right: 1px;
     padding-left: 1px;
   }
   .head-row {
     margin: 0;
   }
+  .center-desk {
+    padding-inline: 5px;
+    padding-top: 10px;
+    width: 100%;
+  }
   .logo_section {
     padding: 0;
     width: 150px;
+    
   }
   .headers {
     padding-top: 10px;
+  }
+  .first_button {
+    padding-top: 2px;
   }
   #main {
     visibility: hidden;
@@ -231,11 +226,7 @@ body[data-aos-duration="400"] [data-aos] {
   font-size: 20px;
   cursor: pointer;
   font-weight: bold;
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(210, 255, 250, 0.1),
-    rgba(180, 255, 250, 1)
-  );
+  background-image: linear-gradient(to bottom right, rgba(210, 255, 250, 0.1), rgba(180, 255, 250, 1));;
   color: darkblue;
   padding: 10px 10px;
   border: none;
@@ -476,16 +467,20 @@ body {
 }
 .gradient-custom {
   /* fallback for old browsers */
-  background: #ffffff;
+  background: #e6e9f0;
 
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to bottom, white, rgba(25, 200, 28, 3));
+  background: -webkit-linear-gradient(
+    to bottom,
+    rgba(210, 255, 250, 0.1),
+    rgba(210, 255, 250, 0.1)
+  );
 
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(
     to bottom,
-    rgba(253, 253, 253, 0.6),
-    rgba(165, 225, 169, 0.6)
+    rgba(210, 255, 250, 0.1),
+    rgba(210, 255, 250, 0.1)
   );
 }
 .list-group li {
@@ -501,55 +496,68 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-.face {
-  width: 110%;
-  height: 100vh;
+.face{
+  width:110%;
+  height:100vh;
   position: relative;
-
+  
   background-color: rgb(252, 251, 251);
   background-size: cover;
+  
+
 }
 
-#mini-logo {
-  height: 100%;
-  width: 100%;
+#mini-logo{
+  height:60px;
+  width: 60px;
 }
-.face-properties {
+.face-properties{
   position: relative;
-  bottom: 800px;
+  bottom:500px;
   align-items: center;
-  left: 20%;
+  left:40%;
 }
-.mini-text {
+.mini-text{
   color: #1a1852;
   font-weight: 800;
   font-style: italic;
 }
-.mini {
+.mini{
   position: relative;
   color: #1a1852;
-  font-weight: 700;
+  font-weight:700;
   font-size: 30px;
   max-width: 200px;
-  left: -20px;
+  left:-20px;
+  
 }
-.mini-logo-div {
-  max-width: 120px;
+.mini-logo-div{
+  max-width: 80px;
+  left:-15px;
 }
-.text-1 {
+.text-1{
   position: relative;
-  right: 6%;
+  right:6%;
 }
-.text-2 {
+.text-2{
   position: relative;
-  right: 0%;
+  right:0%;
 }
-.text-3 {
+.text-3{
   position: relative;
-  right: -10%;
+  right:-10%;
 }
-#Face-back {
+#Face-back{
   position: relative;
-  bottom: 35%;
-  left: 35%;
+  bottom:35%;
+  left:45% ;
+}
+#timer{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 1px;
+  position: relative;
+  right:40%;color: #1a1852;
+  font-weight:500;
+
 }

@@ -17,32 +17,30 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="jquery-3.6.0.min.js"></script>
 </head>
 <body class="body1">
   <div class="mask gradient-custom">
 <!-- Цэсний хэсэг -->
-  <div class=" header  shadow p-1 rounded-3 mb-5">
-      <div class="row head-row " style="max-width: 100%;">
-          <div class=" col-xl-2 col-lg-2 col-md-3 col-sm-6 col logo_section " style="height: 100%;">
-                <div class="center-desk" style="height: 100%;">
-                   <div class="logo" style=" top:-20%;"><a href="#home"><img id="BDS-icon"src="images/logo_en.png" style="width: 100%;"></a> 
-                   </div> 
+  <div class=" header  shadow p-1 rounded-3 mb-5" style="align-items: left;">
+      <div class="row head-row " style="width: 100%; height: 100%;">
+          <div class=" col logo_section" style="height: 100%; padding-top: none;width: 100%;">
+                   <div class="logo" style="height: 100%;"><a href="#home"><img id="BDS-icon"src="images/logo_en.png" style="height: 100%;"></a> 
                 </div>
           </div>
-          <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-12 col logo_section head-wrapper ">
-                <div class="center-desk first_button " >
-                   
-                  <button class="head-button button-1 hidden-xs"><a href="#zahialga_ogoh_zaavar">ЗАХИАЛГА ӨГӨХ ЗААВАР</a></button>
+          <div class="col head-wrapper" style="padding-top: 10px;">
+                <div class="center-desk first_button">
+                  <button class="head-button button-1 border rounded-3 hidden-xs"><a href="#zahialga_ogoh_zaavar">ЗАХИАЛГА ӨГӨХ ЗААВАР</a></button>
              </div>
           </div>
-          <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-12 col logo_section head-wrapper ">
+          <div class="col head-wrapper " style="padding-top: 10px;">
                 <div class="center-desk second_button ">          
-                  <button class="head-button button-2 "><a href="https://dbx.bdsec.mn/" target="blank">ЗАХИАЛГА ӨГӨХ</a></button>
+                  <button class="head-button button-2 border rounded-3"><a href="https://dbx.bdsec.mn/" target="_blank">ЗАХИАЛГА ӨГӨХ</a></button>
              </div>
           </div>
-          <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-12 col logo_section head-wrapper ">
+          <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-12 col logo_section head-wrapper " style="padding-top:10px;">
                  <div class="center-desk third_button ">
-                  <button class="head-button button-3 "><a href="https://dbx.bdsec.mn/" target="blank">ДАНС НЭЭХ</a></button>
+                  <button class="head-button button-3 border rounded-3"><a href="https://dbx.bdsec.mn/mn/create/acc" target="_blank">ДАНС НЭЭХ</a></button>
                  </div>
            </div>
       </div>
@@ -54,19 +52,20 @@
     <a href="https://dbx.bdsec.mn/mn/create/acc" target="blank">ДАНС НЭЭХ</a>
   </div>
   
-  <div id="main">
+  <div id="main" style="padding-right: 50px;">
     <button class="openbtn" onclick="openNav()">☰</button>             
   </div> 
-  <div class="row face"><div class="face-pic"><img id="Face-back" src="Images/Khanbank.png" height="1000px" width="1000px"></div>
+  <div class="row face">
+    <div class="face-pic" height="1000px" width="1000px"><img id="Face-back" src="Images/Khanbank.png" height="1000px" width="1000px"> 
+      <div class="row face-properties" max-width="700px" max-height="700px">
+        <div class="col mini-logo-div"><img id="mini-logo" src="Images/mini-logo.png"></div>
+        <div class="col mini"><p id="mini" >ХААН БАНК</p></div>
+        <h1 class="mini-text text-1">ХААН БАНКНЫ IPO</h1>
+        <h1 class="mini-text text-2">ХАМТЫН ӨСӨЛТ</h1>
+        <h1 class="mini-text text-3">ТӨГӨЛДӨР</h1>
+      </div>
+    </div>
   </div>
-  <div class="row face-properties" max-width="700px" max-height="700px">
-    <div class="col mini-logo-div"><img id="mini-logo" src="Images/mini-logo.jpg"></div>
-    <div class="col mini"><p id="mini" >ХААН БАНК</p></div>
-    <h1 class="mini-text text-1">ХААН БАНКНЫ IPO</h1>
-    <h1 class="mini-text text-2">ХАМТЫН ӨСӨЛТ</h1>
-    <h1 class="mini-text text-3">ТӨГӨЛДӨР</h1>
-    <p id="timer" ></p>
-  </div>  
 <div class="line-1"></div>
 <main style="padding-top: 20px;">
 <!-- Хаан банкны тухай -->
@@ -78,7 +77,7 @@
             <div class="col-sm" style="height: 1px; background: red; width: 90%;"></div>
             <div class="col-sm-2" style="height: 4px; background: red; width: 10%;"></div>
           </div>
-      <p style="text-align: justify;">
+      <p class="aos-init" style="text-align: justify; color: black; font-size: large;" data-aos="fade-right">
       “ХААН Банк нь 1991 оноос хойш үйл ажиллагаа явуулсан арвин түүхтэй бөгөөд анх
 байгуулагдсан цагаас хойш өдгөө 30 жилийн туршид амжилттай ажиллаж ирсэн төдийгүй
 Монголын банк санхүүгийн салбарт хүчирхэг, үндэсний хэмжээний тэргүүлэгч банк болон
@@ -87,10 +86,10 @@
       </p>
       </div>
         <div class="row">
-          <div class="col-lg-6" >
+          <div class="col-lg-6 aos-init" data-aos="fade-right">
         <img src="images/aboutkhan1.jpg" style="width: 100%; height: 100%;" alt="" >
       </div>
-      <div class="col-lg-6" >
+      <div class="col-lg-6 aos-init" data-aos="fade-left" >
         <img src="images/aboutkhan2.jpg" style="width: 100%; height: 100%;" alt="" >
       </div>
       <div class="col-lg-6" >
@@ -213,7 +212,6 @@
 </table>
   </div>
 </div>
-
 <!-- Хувьцаа эзэмшигчдийн хэсэг -->
 <div class="container" id="diagram" style="width: 100%; height:120%"> 
   <h3  class=" aos-init" data-aos="fade-right" style="text-align: left;"> Хувьцаа эзэмшигчдийн бүтэц</h3>
@@ -248,6 +246,39 @@
   <div class="col-sm-2" style="height: 4px; background: red; width: 10%;"></div>
 </div>
 </div>
+
+<!-- progressbar -->
+<script>
+var xml = "<shows><show><date>9/8</date><place>Toads Place</place><location>New Haven, CT</location><time>9PM</time></show></shows>"
+
+$(document).ready(function(){
+    //$('#table').append('<h2>SHOWS</h2>'); 
+    $('#table').append('<table id="show_table">'); 
+    $(xml).find('show').each(function(){
+        var $show = $(this);
+        var date = $show.find('date').text();
+        var place = $show.find('place').text();
+        var location = $show.find('location').text();
+        var time = $show.find('time').text();
+        var html = '<tr><td class="bold">' + date + '</td><td class="hide">' + place + '</td><td>' + location + '</td><td class="bold">' + time + '</td></tr>';
+        $('#show_table').append(html);
+    });
+    //alert($('#show_table').html());
+})
+  </script>
+<div class="myProgress container">
+  <div id='showCD'></div>
+  <div class="wholeProgress">
+    <div id="myBar-customers"><p id="percent1"></p></div>
+</div>
+<div class="wholeProgress">
+  <div id="myBar-orderCount"><p id="percent2"></p></div>
+</div>
+<div class="wholeProgress">
+  <div id="myBar-volumeCount"><p id="percent3"></p></div>
+</div>
+</div>
+
 
 <div class="container" style="padding-bottom: 30px;">
 <div class="row align-items-md-stretch">
@@ -312,82 +343,117 @@
 
 <ul id="faq-list" data-aos="fade-up" class="aos-init aos-animate">
 <li>
-<a data-toggle="collapse" class="collapsed" href="#faq18" aria-expanded="true" style="color: black;">Асуулт<i class="ion-android-remove"></i></a>
-  <div id="faq18" class="collapse show" data-parent="#faq-list">
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit voluptatibus amet magni, enim dolores sequi quod repellendus ducimus nam eos, exercitationem officiis provident quia id corrupti saepe? Doloribus, deleniti quis.
-    </p>
+<a data-toggle="collapse" class="collapsed" href="#faq18" style="color: black;">1.	Хаан банкны IPO-д хэрхэн захиалга өгөх вэ?<i class="ion-android-remove"></i></a>
+  <div id="faq18" class="collapse" data-parent="#faq-list">
+    <ul class="collapsed_question">
+    </ul>
 </div>
 </li>
 
 <li>
-  <a data-toggle="collapse" class="collapsed" href="#faq1" style="color: black;">Асуулт-1 <i class="ion-android-remove"></i></a>
+  <a data-toggle="collapse" class="collapsed" href="#faq1" style="color: black;">2.	Үнэт цаасны данс хэрхэн нээлгэх вэ?<i class="ion-android-remove"></i></a>
   <div id="faq1" class="collapse" data-parent="#faq-list">
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quod sapiente voluptatum pariatur, deleniti aliquam tenetur nostrum doloremque eligendi modi ullam in omnis quo amet.
-    </p>
+    <ul class="collapsed_question">
+      <li> <a href="#contact" style="font-size: medium; padding: none; text-decoration: underline; color: #1A1852; padding-bottom: 5px;">Өөрийн биеэр салбар дээр очиж данс нээлгэх:</a></li>
+      <li><a href="#zahialga_ogoh_zaavar" style="font-size: medium; padding: none; text-decoration: underline; color: #1A1852;padding-bottom: 5px;">Онлайнаар данс нээх</a></li>
+    </ul>
   </div>
 </li>
 
 <li>
-  <a data-toggle="collapse" href="#faq3" class="collapsed" style="color: black;">Асуулт-2 <i class="ion-android-remove"></i></a>
+  <a data-toggle="collapse" href="#faq3" class="collapsed" style="color: black;">3.	Үнэт цаасны танилцуулгатай танилцах <i class="ion-android-remove"></i></a>
   <div id="faq3" class="collapse" data-parent="#faq-list">
-    <p>
-    </p>
+    <ul class="collapsed_question">
+      <li> <a href="#" target="_blank" style="font-size: medium; padding: none; text-decoration: underline; color: #1A1852; padding-bottom: 5px;">Хураангуй танилцуулга /Линк, investor ppt/</a></li>
+      <li><a href="#" target="_blank" style="font-size: medium; padding: none; text-decoration: underline; color: #1A1852; padding-bottom: 5px;">Дэлгэрэнгүй танилцуулга /Линк, проспектус/</a></li>
+    </ul>
   </div>
 </li>
 
 <li>
-  <a data-toggle="collapse" href="#faq4" class="collapsed" style="color: black;">Асуулт-3<i class="ion-android-remove"></i></a>
+  <a data-toggle="collapse" href="#faq4" class="collapsed" style="color: black;">4.	Нийтэд санал болгох эзэмшлийн хувь болон стратегийн хөрөнгө оруулагч, олон нийтэд санал болгох хувийн ялгаа юу вэ?<i class="ion-android-remove"></i></a>
   <div id="faq4" class="collapse" data-parent="#faq-list">
-    <p>
-    </p>
+    <ul class="collapsed_question">
+      <li>Нийтэд санал болгох эзэмшлийн хувь нь нийт эргэлтэнд байгаа .............. хувьцааны 15%-ийг буюу ..................... ширхэг хувьцааг IPO арилжааны үеэр санал болгоно.</li>
+      <li>Нийтэд санал болгох ...................... ширхэг хувьцааны 85%-ийг буюу ................... ширхэг хувьцааг стратегийн хөрөнгө оруулагчдад санал болгоно.</li>
+      <li>Нийтэд санал болгох ....................... ширхэг хувьцааны 15%-ийг буюу ..................... ширхэг хувьцааг жижиглэн хөрөнгө оруулагчид буюу олон нийтэд санал болгоно.</li>
+    </ul>
   </div>
 </li>
 
 <li>
-  <a data-toggle="collapse" href="#faq5" class="collapsed" style="color: black;">Асуулт-4<i class="ion-android-remove"></i></a>
+  <a data-toggle="collapse" href="#faq5" class="collapsed" style="color: black;">5.	Гадаадад байгаа хүн оролцож болох уу?<i class="ion-android-remove"></i></a>
   <div id="faq5" class="collapse" data-parent="#faq-list">
     <p>
+      “БиДиСЕК ҮЦК” ХК-ийн Онлайн Брокерийн систем болох www.stock.mn веб хуудсаар хандан дансаа нээлгэж, арилжаанд оролцох боломжтой. Онлайн платформоор дамжуулан анхдагч зах зээлийн арилжаанд оролцохоос гадна Монголын Хөрөнгийн Биржийн хоёрдогч зах зээлийн арилжаагаар дамжуулан бусад тарлийн хувьцаа бонд, үнэт цаасны арилжаанд оролцох боломжтой болох юм.
     </p>
   </div>
 </li>
 
 <li>
-  <a data-toggle="collapse" href="#faq6" class="collapsed" style="color: black;">Асуулт-6<i class="ion-android-remove"></i></a>
+  <a data-toggle="collapse" href="#faq6" class="collapsed" style="color: black;">6.	Ногдол ашиг тараах уу?<i class="ion-android-remove"></i></a>
   <div id="faq6" class="collapse" data-parent="#faq-list">
     <p>
+      “Хаан банк” нь нийт цэвэр ашгийн 40-60%-ийг ногдол ашиг хэлбэрээр тараах бодлого боловсруулан ажиллаж байна. Мэдээж компаний ногдол ашиг тараахын тулд хэд хэдэн шаардлагуудыг хангасан байх шаардлагатай.
     </p>
+    <ul class="collapsed_question">
+      <li>Тухайн санхүүгийн жилд ашигтай ажилласан.</li>
+      <li>Үндсэн үйл ажиллагаанд шаардлагатай санхүүжилтүүдийг хийж гүйцэтгэсэн.</li>
+      <li>Ногдол ашиг тараасны дараа төлбөрийн чадвартай байх</li>
+      <li>Ногдол ашиг тараасны дараа банкны дүрэмд заасан хувь нийлүүлсэн хөрөнгийн хэмжээний нийлбэрээс илүү байх;</li>
+      <li>Ногдол ашиг төлсний дараах Монгол банкнаас тогтоосон шалгуур үзүүлэлтүүдийг хангаж байх.</li>
+    </ul>
   </div>
 </li>
 
 <li>
-  <a data-toggle="collapse" href="#faq7" class="collapsed" style="color: black;">Асуулт-7<i class="ion-android-remove"></i></a>
+  <a data-toggle="collapse" href="#faq7" class="collapsed" style="color: black;">7.	Захиалга давсан тохиолдолд яах вэ? Хувь тэнцүүлэлт гэж юу вэ?<i class="ion-android-remove"></i></a>
   <div id="faq7" class="collapse" data-parent="#faq-list">
     <p>
+      IPO арилжааны үеэр татан төвлөрүүлэхээр зарласан дүнгээс илүү гарсан хэмжээгээр хөрөнгө оруулагчдаас захиалга орж ирсэн тохиолдолд хувь тэнцүүлэлт явагдана. Өөрөөр хэлвэл тодорхой хэмжээнд хязгаарлагдаж буй хувьцааг түүнээс давсан захиалгын хэмжээнд нийцүүлж, хөрөнгө оруулагч тус бүрийн өгсөн захиалгын тодорхой нэг хувийг /хэсгийг/ биелүүлэх тухай ойлголт юм.
 
+      Хаан банкны IPO арилжааны хувьд ............. аргаар хувь тэнцүүлэлт хийгдэх бөгөөд, аргачлал нь дараах байдалтай байна:
+      ..........................................................................................................................................................      
     </p>
   </div>
 </li>
 <li>
-  <a data-toggle="collapse" href="#faq8" class="collapsed" style="color: black;">Асуулт-8<i class="ion-android-remove"></i></a>
+  <a data-toggle="collapse" href="#faq8" class="collapsed" style="color: black;">8.	Татан төвлөрүүлэх хөрөнгийн зарцуулалтын талаар?<i class="ion-android-remove"></i></a>
   <div id="faq8" class="collapse" data-parent="#faq-list">
     <p>
-
+      Нийт татан төвлөрүүлэх хөрөнгийг банкны ашигт ажиллагааг сайжруулах мэдээллийн технологийн хөгжүүлэлт болон байгаль орчинд ээлтэй, ноггон төсөл хөтөлбөрүүдэд чиглэсэн зээлийн багцуудыг санхүүжүүлэхэд зарцуулна. Үүнд:
     </p>
+    <ul class="collapsed_question">
+      <li>29 тэрбум ₮ – Мэдээллийн технологийн хөрөнгө оруулалт</li>
+      <li>35 тэрбум ₮ – Цахим бүтээгдхүүний хөгжүүлэлт, сайжруулалт</li>
+      <li>3 тэрбум ₮ - Агаар, орчны бохирдлыг бууруулах зорилготой өрхийн болон бизнесийн зээл</li>
+      <li>23 тэрбум ₮ - Эрчим хүчний үр ашгийг нэмэгдүүлэх бизнесийн зээл болон эрчим хүчний хэмнэлттэй цахилгаан хэрэгслийг санхүүжүүлэх гэр бүлийн ногоон зээл</li>
+      <li>36 тэрбум ₮ - Бусад ногоон төсөл хөтөлбөрүүдийг санхүүжүүлэх</li>
+      <li>57 тэрбум ₮ - Иргэдийн орон сууцны болон бизнесийн урт хугацаат хөрөнгө оруулалтын зээл</li>
+    </ul>
   </div>
 </li>
 <li>
-  <a data-toggle="collapse" href="#faq9" class="collapsed" style="color: black;">Асуулт-9<i class="ion-android-remove"></i></a>
+  <a data-toggle="collapse" href="#faq9" class="collapsed" style="color: black;">9.	Үнэлгээний талаар?<i class="ion-android-remove"></i></a>
   <div id="faq9" class="collapse" data-parent="#faq-list">
     <p>
+      Хаан банкны хувьд нэгж хувьцааны үнэлгээ нь хөндлөнгийн, хараат бус үнэлгээний байгууллагын үнэлгээгээр 1,135₮ гэж тогтоогдсон. Гэсэн хэдий ч банкны зүгээс шинээр хөрөнгө оруулж буй хөрөнгө оруулагчиддаа зориулан 15% хямдралтай үнээр буюу 959₮-өөр зах зээлд санал болгож байна.
     </p>
   </div>
 </li>
 <li>
-  <a data-toggle="collapse" href="#faq10" class="collapsed" style="color: black;">Асуулт-10<i class="ion-android-remove"></i></a>
+  <a data-toggle="collapse" href="#faq10" class="collapsed" style="color: black;">10.	Арилжааны шимтгэл хэд вэ?<i class="ion-android-remove"></i></a>
   <div id="faq10" class="collapse" data-parent="#faq-list">
     <p>
+      IPO арилжаанд оролцох гэж буй хөрөнгө оруулагч нь арилжааны үнийн дүнгийн тодорхой хувиар тооцсон брокерын үйлчилгээний шимтгэлийг төлөх ба хувь хэмжээ нь ҮЦК тус бүрт харилцан адилгүй байдаг. БиДиСЕК ҮЦК ХК-ийн хувьд Хаан банкны IPO-д оролцож байгаа хөрөнгө оруулагчиддаа .....%-ийн брокерын шимтгэлийг санал болгож байна.
+    </p>
+  </div>
+</li>
+<li>
+  <a data-toggle="collapse" href="#faq11" class="collapsed" style="color: black;">11.	Хаан банкны хувьцааг худалдан авах нь ашигтай юу?<i class="ion-android-remove"></i></a>
+  <div id="faq11" class="collapse" data-parent="#faq-list">
+    <p>
+      Хувьцааны ханшийн хөдөлгөөнд тухайн хувьцаа гаргагч байгууллагын ашигт ажиллагаа, тогтвортой байдал голлох нөлөөг үзүүлдэг. Хаан банкны хувьд өнгөрсөн хугацаанд тогтмол, эерэг өсөлтийг үзүүлж ажиллаж ирсэн бөгөөд цаашид ч мөн тогтвортой өсөлтөө хадгалан ажиллах зорилт тавин ажиллаж байна. Мөн банк ашигтай ажилласнаар хувьцааны ханшаас гадна ногдол ашгийн өгөөжийг мөн давхар хүртэх боломжтой юм.
     </p>
   </div>
 </li>
@@ -411,7 +477,7 @@
               <div class="row" style="justify-content: center;">	
                   <div class="col-sm-6 col-md-6 col-lg-3">
                       <h2 class="adderess_text" style="color: white;">Хаяг</h2>
-                      <div class="image-icon "><img src="images/map-icon.png"> <span class="email_text" style="color: white;">Zaluuchuud Avenue 27/1,8th Khoroo, Sukhbaatar District, Ulaanbaatar </span></div>
+                      <div class="image-icon "><img src="images/map-icon.png"> <span class="email_text" style="color: white;">БиДиСек ХК, Бээжингийн гудамж 27/1, 8-р хороо, Сүхбаатар дүүрэг, Улаанбаатар хот Монгол улс. </span></div>
                       <div class="image-icon "><img src="images/phone-icon.png"><span class="email_text" style="color: white;">(+976) 75551919</span></div>
                       <div class="image-icon "><img src="images/email-icon.png"><span class="email_text" style="color: white;">WWW.BdSec.mn</span></div>
                   </div>
@@ -442,8 +508,6 @@
           </div>
       </div>
   </div>
-</div>
-<div class="container" style="padding-top: 10px;">
 </div>
 </div>
 
@@ -576,40 +640,48 @@ popup.classList.toggle("show");
 <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 <script>// Animations init
   new WOW().init();</script>
- <script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("Nov 7, 2022 10:22:00").getTime();
   
-  // Update the count down every 1 second
-  var x = setInterval(function() {
-  
-    // Get today's date and time
-    var now = new Date().getTime();
-      
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-      
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
-    // Output the result in an element with id="demo"
-    document.getElementById("timer").innerHTML ="Эхэлтэл "+ days + "өдөр " + hours + "цаг "
-    + minutes + "минут " + seconds + "секунд ";
-      
-    // If the count down is over, write some text 
-    if (distance < 0) {
-      distance=distance+86400*7*1000;
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      document.getElementById("timer").innerHTML ="Дуустал " +  days + "өдөр " + hours + "цаг " + minutes + "минут " + seconds + "секунд ";
-    }
-  }, 1000);
-  </script> 
-  
+
+  <!-- progressbar -->
+<script>
+displayCD(0);
+function displayCD(i) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            myFunction(this, i);
+        }
+    };
+    xmlhttp.open("GET", 'order.xml', true);
+    xmlhttp.send();
+}
+function myFunction(xml, i) {
+    var xmlDoc = xml.responseXML; 
+    x = xmlDoc.getElementsByTagName("item");
+    document.getElementById("showCD").innerHTML =
+    "Захиалагчдын тоо: " +
+    x[i].getElementsByTagName("customers")[0].childNodes[0].nodeValue+
+    "<br>Нийт захиалгын тоо: " +
+    x[i].getElementsByTagName("orderCount")[0].childNodes[0].nodeValue+
+    "<br>Нийт захиалсан ширхэг: " +
+    x[i].getElementsByTagName("volumeCount")[0].childNodes[0].nodeValue;
+
+    var width1=x[i].getElementsByTagName("customers")[0].childNodes[0].nodeValue;
+    var width2=x[i].getElementsByTagName("orderCount")[0].childNodes[0].nodeValue;
+    var width3=x[i].getElementsByTagName("volumeCount")[0].childNodes[0].nodeValue;
+    var a = document.getElementById("myBar-customers");
+    var b = document.getElementById("myBar-orderCount")
+    var c = document.getElementById("myBar-volumeCount")
+    var max1=100;
+    var max2=1000;
+    var max3=1000000;
+    a.style.width = width1/max1*100 + "%";
+    b.style.width = width2/max2*100 + "%";
+    c.style.width = width3/max3*100 + "%";
+    document.getElementById("percent1").innerHTML =a.style.width;
+    document.getElementById("percent2").innerHTML =b.style.width;
+    document.getElementById("percent3").innerHTML =c.style.width;
+}
+</script>
 </body>
 </html>

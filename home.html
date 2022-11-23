@@ -63,8 +63,23 @@
         <h1 class="mini-text text-1">ХААН БАНКНЫ IPO</h1>
         <h1 class="mini-text text-2">ХАМТЫН ӨСӨЛТ</h1>
         <h1 class="mini-text text-3">ТӨГӨЛДӨР</h1>
-        <p id="timer" ></p>
       </div>
+        <div class="row facet-properties shadow  rounded"  >
+    <div class="row"><div  id="banner" style="text-decoration-color: black; font-size: 30px; text-align: center; width: 600px;"></div></div>
+    <div class="row"><div class="col-sm Timer ">
+      <div id="timerDays" class="shadow p-3 mb-5 bg-body rounded" ></div>
+    </div>
+    <div class="col-sm Timer">
+      <div id="timerHours" class="shadow p-3 mb-5 bg-body rounded"></div>
+    </div>
+    <div class="col-sm Timer">
+    <div id="timerMinutes" class="shadow p-3 mb-5 bg-body rounded"></div>
+    </div>
+    <div class="col-sm Timer">
+      <div id="timerSeconds" class="shadow p-3 mb-5 bg-body rounded"></div>
+    </div>
+    </div>
+  </div>
     </div>
   </div>
 <div class="line-1"></div>
@@ -687,7 +702,7 @@ function myFunction(xml, i) {
 <!-- Timer -->
 <script>
   // Set the date we're counting down to
-  var countDownDate = new Date("Nov 20, 2022 10:22:00").getTime();
+  var countDownDate = new Date("Nov 21, 2022 10:07:00").getTime();
   
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -705,8 +720,14 @@ function myFunction(xml, i) {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
       
     // Output the result in an element with id="demo"
-    document.getElementById("timer").innerHTML ="Эхэлтэл "+ days + "өдөр " + hours + "цаг "
-    + minutes + "минут " + seconds + "секунд ";
+    if(distance>=0){
+      document.getElementById("banner").innerHTML="Эхлэхэд";
+      document.getElementById("timerDays").innerHTML=" "+days+"<br>"+"өдөр";
+      document.getElementById("timerHours").innerHTML=""+hours+"<br>"+"цаг";
+      document.getElementById("timerMinutes").innerHTML=""+minutes+"<br>"+"минут";
+      document.getElementById("timerSeconds").innerHTML=""+seconds+"<br>"+"секунд" ;
+    }
+   
       
     // If the count down is over, write some text 
     if (distance < 0) {
@@ -715,7 +736,15 @@ function myFunction(xml, i) {
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      document.getElementById("timer").innerHTML ="Дуустал " +  days + "өдөр " + hours + "цаг " + minutes + "минут " + seconds + "секунд ";
+      if(days>=0){
+        document.getElementById("banner").innerHTML="Дуусахад";
+      document.getElementById("timerDays").innerHTML=" "+days+"<br>"+"өдөр";
+      document.getElementById("timerHours").innerHTML=""+hours+"<br>"+"цаг";
+      document.getElementById("timerMinutes").innerHTML=""+minutes+"<br>"+"минут";
+      document.getElementById("timerSeconds").innerHTML=""+seconds+"<br>"+"секунд" ;
+
+      }
+      else document.getElementById("banner").innerHTML="Арилжаа дууссан";
     }
   }, 1000);
   </script> 

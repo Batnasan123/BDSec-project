@@ -601,3 +601,23 @@ body {
   text-align: center;
   border-radius: 25px;
 }
+.Timer{
+  margin-top: -40px;
+  height: 70px;
+font-size: 22px;
+max-width:120px;
+min-width: 120px;
+text-align: center;
+
+}
+.facet-properties{
+  padding-left: 20px;
+  position: relative;
+  bottom:500px;
+  left: 10px;
+  width:530px;
+  height:210px;
+  margin-left: 0px;
+
+
+}
